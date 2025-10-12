@@ -6,17 +6,19 @@ print("Hola bienvenido a la calculadora " + nombre.strip().lower().capitalize() 
       " " + apellido.strip().lower().capitalize())
 
 numero1 = float(input("Ingrese un numero: "))
+
 numero2 = float(input("Ingrese otro numero: "))
+
 suma = numero1 + numero2
-print(f"La suma de {numero1} + {numero2} = {suma}")
+
 resta = numero1 - numero2
-print(f"La resta de {numero1} - {numero2} = {resta}")
+
 multiplicacion = numero1 * numero2
-print(f"La multiplicacion de {numero1} * {numero2} = {multiplicacion}")
+
 division = numero1 / numero2
-print(f"La division de {numero1} / {numero2} = {division}")
+
 potencia = numero1 ** numero2
-print(f"La potencia de {numero1} ** {numero2} = {potencia}")
+
 
 # relacion de numeros
 if numero1 > numero2:
@@ -59,3 +61,20 @@ class NumeroMagico:
         Representación en string del objeto.
         """
         return f"NumeroMagico(valor={self.valor})"
+
+
+print("------La Suma------")
+print(f'{numero1} + {numero2} = {suma}')
+print("------La Resta------")
+print(f'{numero1} - {numero2} = {resta}')
+print("------La Multiplicacion------")
+print(f'{numero1} * {numero2} = {multiplicacion}')
+print("------La Division------")
+print(f'{numero1} / {numero2} = {division}')
+print("------La Potencia------")
+print(f'{numero1} ** {numero2} = {potencia}')
+
+print("---------------------------------------------------------------------------------")
+
+print(f'Gracias {nombre.strip().lower().capitalize()} {apellido.strip().lower().capitalize()} por utilizar la calculadora. ')
+
