@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+
+<h2>Datos</h2>
+
+
+ <h2>Datos Experimentales Simulados</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Temperatura (°C)</th>
+        <th>Presión (hPa)</th>
+        <th>Tiempo (s)</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for registro in datos %}
+      <tr>
+        <td>{{ registro.id }}</td>
+        <td>{{ registro.temperatura }}</td>
+        <td>{{ registro.presion }}</td>
+        <td>{{ registro.tiempo }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+
+ 
+
+  <p><a href="/descargar">📥 Descargar CSV</a></p>
+
+
+
+
+
+
+
+
+
+{% endblock %}
